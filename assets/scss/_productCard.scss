@@ -1,0 +1,25 @@
+#productList {
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        border: 2px solid #000;
+        border-radius: 8px;
+        width: 400px;
+        padding: 0.3rem 0.5rem;
+    
+        img {
+            width: 10vw;
+        }
+    
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+        }
+    }
+}

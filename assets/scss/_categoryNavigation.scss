@@ -1,0 +1,20 @@
+#navigation {
+    background: #000;
+    display: block;
+    padding: 0.7rem 0.9rem;
+    color: #fff;
+    .category-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .category {
+            list-style-type: none;
+            font-family: sans-serif;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
