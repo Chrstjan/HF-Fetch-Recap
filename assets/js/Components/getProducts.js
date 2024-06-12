@@ -7,6 +7,14 @@ export const getProducts = async () => {
     buildProductCards(data);
 }
 
+export const getSelectedProductAmount = async (start, end) => {
+    const productEndpoint = "https://fakestoreapi.com/products?limit=0";
+    const data = await myFetchData(productEndpoint);
+
+    const selectedProducts = data.slice(start, end);
+    console.log(selectedProducts);
+}
+
 export const getProductsInCategory = async (products, limit) => {
     console.log(products);
     const productCategoryEndpoint = `https://fakestoreapi.com/products/category/${products}?limit=${limit}`;
