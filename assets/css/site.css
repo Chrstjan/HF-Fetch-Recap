@@ -2,3 +2,32 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+#productList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+#productList .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  width: 400px;
+  padding: 0.3rem 0.5rem;
+}
+#productList .product-card img {
+  width: 10vw;
+}
+#productList .product-card figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
